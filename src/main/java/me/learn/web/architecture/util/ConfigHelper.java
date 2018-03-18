@@ -2,6 +2,7 @@ package me.learn.web.architecture.util;
 
 import me.learn.web.architecture.constant.ConfigConstant;
 
+import java.util.HashMap;
 import java.util.Properties;
 
 /**
@@ -32,6 +33,7 @@ public class ConfigHelper {
         return PropsUtils.getString(CONFIG_PROPS, ConfigConstant.JDBC_PASSWORD);
     }
 
+    HashMap
 
     public static String getAppBasePackage() {
         return PropsUtils.getString(CONFIG_PROPS, ConfigConstant.APP_BASE_PACKAGE);

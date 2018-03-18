@@ -26,6 +26,20 @@ public class ClassUtil {
 
 
     /**
+     *
+     * @param classname
+     * @return
+     */
+    public static Class<?> loadClass(Class<?> classname) {
+
+        return loadClass(classname.getName(), false);
+    }
+
+    public static Class<?> loadClass(String classname) {
+
+        return loadClass(classname, false);
+    }
+    /**
      * 根据类名加载类，
      *
      * @param classname
