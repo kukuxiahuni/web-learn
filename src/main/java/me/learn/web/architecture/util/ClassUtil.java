@@ -32,12 +32,12 @@ public class ClassUtil {
      */
     public static Class<?> loadClass(Class<?> classname) {
 
-        return loadClass(classname.getName(), false);
+        return loadClass(classname.getName(), true);
     }
 
     public static Class<?> loadClass(String classname) {
 
-        return loadClass(classname, false);
+        return loadClass(classname, true);
     }
     /**
      * 根据类名加载类，

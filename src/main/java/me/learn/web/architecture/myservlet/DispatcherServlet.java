@@ -1,10 +1,6 @@
 package me.learn.web.architecture.myservlet;
 
-import com.alibaba.fastjson.JSON;
-import me.learn.web.architecture.component.Handler;
-import me.learn.web.architecture.component.Param;
-import me.learn.web.architecture.model.Data;
-import me.learn.web.architecture.model.View;
+
 import me.learn.web.architecture.util.*;
 import org.apache.commons.lang3.StringUtils;
 
@@ -17,6 +13,12 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.lang.reflect.Method;
 import java.util.*;
+
+import com.alibaba.fastjson.JSON;
+import me.learn.web.architecture.component.Handler;
+import me.learn.web.architecture.component.Param;
+import me.learn.web.architecture.model.Data;
+import me.learn.web.architecture.model.View;
 
 /**
  * web

@@ -1,5 +1,6 @@
 E:\workspace-easycar\web\src\main\java\me\learn\web\architecture\util\HelperLoader.java
 E:\workspace-easycar\web\src\main\java\me\learn\web\architecture\util\ControllerHelper.java
+E:\workspace-easycar\web\src\main\java\me\learn\web\architecture\util\ProxyManager.java
 E:\workspace-easycar\web\src\main\java\me\learn\web\architecture\util\PropsUtils.java
 E:\workspace-easycar\web\src\main\java\me\learn\web\architecture\util\StreamUtil.java
 E:\workspace-easycar\web\src\main\java\me\learn\web\architecture\proxy\Proxy.java
@@ -30,3 +31,4 @@ E:\workspace-easycar\web\src\main\java\me\learn\web\architecture\util\CodecUtil.
 E:\workspace-easycar\web\src\main\java\me\learn\web\architecture\annotation\Service.java
 E:\workspace-easycar\web\src\main\java\me\learn\web\architecture\constant\ConfigConstant.java
 E:\workspace-easycar\web\src\main\java\me\learn\web\architecture\annotation\Controller.java
+E:\workspace-easycar\web\src\main\java\me\learn\web\architecture\util\AopHelper.java

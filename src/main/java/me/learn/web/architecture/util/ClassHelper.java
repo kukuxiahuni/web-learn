@@ -3,6 +3,7 @@ package me.learn.web.architecture.util;
 import me.learn.web.architecture.annotation.Controller;
 import me.learn.web.architecture.annotation.Service;
 
+import java.lang.annotation.Annotation;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Set;
@@ -47,5 +48,40 @@ public final class ClassHelper {
         classSet.addAll(getServiceClassSet());
         classSet.addAll(getControllerClassSet());
         return classSet;
+    }
+
+    /**
+     * 根据父类查找其所有的子类
+     * @param superClass
+     * @return
+     */
+    public final static Set<Class<?>> getClassSetBySuper(Class<?> superClass) {
+
+        return CLASS_SET.stream().filter(aClass -> {
+
+            //判断superClass是否是aclass的超类或相同的类
+            if (superClass.isAssignableFrom(aClass) && !superClass.equals(aClass)) {
+
+                return true;
+            }
+            return false;
+
+        }).collect(Collectors.toSet());
+
+    }
+
+    /**
+     * 获取含有某个注解的set
+     * @param annotation
+     * @return
+     */
+    public final static Set<Class<?>> getClassSetByAnnotation(Class<? extends Annotation> annotation) {
+
+        return CLASS_SET.stream().filter(aClass -> {
+
+            return aClass.isAnnotationPresent(annotation);
+
+        }).collect(Collectors.toSet());
+
     }
 }
